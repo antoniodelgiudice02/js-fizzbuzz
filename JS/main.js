@@ -6,7 +6,21 @@ for(let i=1; i<=100; i++){
 
     let text='';
 
-    if(i % 3 == 0){
+    if(i % 15 == 0){
+
+        text='FizzBuzz';
+        row.innerHTML+=`
+
+        <div class="col-3 g-3">
+            <div class="card p-3 text-center">
+                <h3>${text}</h3>
+            </div>
+        </div>
+    
+    `
+
+    } else if(i % 3 == 0){
+
         text='Fizz';
         row.innerHTML+=`
 
@@ -18,6 +32,7 @@ for(let i=1; i<=100; i++){
     
     `
     } else if(i % 5 == 0){
+
         text='Buzz';
         row.innerHTML+=`
 
@@ -28,9 +43,8 @@ for(let i=1; i<=100; i++){
         </div>
     
     `
-    }
-    
-    else {
+    } else {
+        
         row.innerHTML+=`
 
         <div class="col-3 g-3">
@@ -40,8 +54,11 @@ for(let i=1; i<=100; i++){
         </div>
     
     `
-
     }
+
+     
+    
+    
     
 
 
